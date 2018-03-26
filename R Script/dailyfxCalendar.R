@@ -162,9 +162,8 @@ TF$previous <- as.numeric(clean(TF$previous_))
 #TF <- dplyr::filter(TF,TF$Date >= ymd("2013-01-01") & TF$Date <= ymd("2013-12-31"))
 TF <- dplyr::filter(TF,TF$Date >= ymd("2014-01-01") & TF$Date <= ymd("2014-12-31"))
 
-## Guardasmos como .sav ----
+## Guardamos como .txt ----
 pth <- "C:/Users/CAraya/Documents/CARAYA/"
 write.table(TF,paste(pth,"DailyFxCalendar_2014.txt",collapse=""),sep="|", quote = FALSE)
 
-#write_sav(TF,paste(pth,"DailyFxCalendar_2014.sav",sep=""))
 

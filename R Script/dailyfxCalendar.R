@@ -164,6 +164,6 @@ TF <- dplyr::filter(TF,TF$Date >= ymd("2014-01-01") & TF$Date <= ymd("2014-12-31
 
 ## Guardamos como .txt ----
 pth <- "C:/Users/CAraya/Documents/CARAYA/"
-write.table(TF,paste(pth,"DailyFxCalendar_2014.txt",collapse=""),sep="|", quote = FALSE)
+write.table(TF,paste(pth,"DailyFxCalendar_2014.txt",collapse=""),sep="|", quote = FALSE, row.names = FALSE)
 
 
